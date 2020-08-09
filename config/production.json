@@ -1,4 +1,4 @@
 {
-  "host": "server-app.feathersjs.com",
+  "host": "autogen-app.feathersjs.com",
   "port": "PORT"
 }

@@ -9,7 +9,7 @@
   "authentication": {
     "entity": "user",
     "service": "users",
-    "secret": "Wdz2llxdtlXguJH+y6sUlsTcRUE=",
+    "secret": "bSeh87WPUch+8iTro936JboEDRk=",
     "authStrategies": [
       "jwt",
       "local"
@@ -26,35 +26,6 @@
     "local": {
       "usernameField": "email",
       "passwordField": "password"
-    },
-    "oauth": {
-      "redirect": "/",
-      "auth0": {
-        "key": "<auth0 oauth key>",
-        "secret": "<auth0 oauth secret>",
-        "subdomain": "<auth0 subdomain>"
-      },
-      "google": {
-        "key": "<google oauth key>",
-        "secret": "<google oauth secret>",
-        "scope": [
-          "email",
-          "profile",
-          "openid"
-        ]
-      },
-      "facebook": {
-        "key": "<facebook oauth key>",
-        "secret": "<facebook oauth secret>"
-      },
-      "twitter": {
-        "key": "<twitter oauth key>",
-        "secret": "<twitter oauth secret>"
-      },
-      "github": {
-        "key": "<github oauth key>",
-        "secret": "<github oauth secret>"
-      }
     }
   },
   "nedb": "../data"

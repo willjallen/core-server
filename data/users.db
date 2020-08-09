@@ -1,2 +1,2 @@
-{"email":"someone@example.com","password":"$2a$10$4zzijNGVIKkBUosES9y46et8si1z4Spc//InS8sKk.YzJJ1JIskoS","_id":"c3SlIFCt5HQWXksM"}
 {"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
+{"email":"hello@feathersjs.com","password":"$2a$10$MY.kBqionUoo004N3HZE3.j2y6RFv20CIbxMdXeXU6qu7Vans8f9S","_id":"u4iUfyAY20EISecG"}
