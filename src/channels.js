@@ -7,6 +7,9 @@ module.exports = function (app) {
   app.on('connection', connection => {
     // On a new real-time connection, add it to the anonymous channel
     app.channel('anonymous').join(connection)
+    console.log(connection.headers.cookie, 'joined');
+    console.log(app.channel('anonymous').connections.cookie)
+
   })
 
   app.on('login', (authResult, { connection }) => {
@@ -14,14 +17,16 @@ module.exports = function (app) {
     // real-time connection, e.g. when logging in via REST
     if (connection) {
       // Obtain the logged in user from the connection
-      // const user = connection.user;
+      const user = connection.user;
 
       // The connection is no longer anonymous, remove it
       app.channel('anonymous').leave(connection)
 
       // Add it to the authenticated user channel
       app.channel('authenticated').join(connection)
-
+      console.log(connection.headers.cookie, 'auth joined');
+      // Debugging
+      
       // Channels can be named anything and joined on any condition
 
       // E.g. to send real-time events only to admins use
@@ -35,6 +40,10 @@ module.exports = function (app) {
       // app.channel(`userIds/${user.id}`).join(connection);
     }
   })
+
+  app.on('message', (data) => {
+    console.log(data);
+  });
 
   // eslint-disable-next-line no-unused-vars
   app.publish((data, hook) => {

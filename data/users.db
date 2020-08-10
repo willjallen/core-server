@@ -1,2 +1,5 @@
-{"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
+{"email":"@feathersjs.com","password":"$2a$10$4xxWmv088S7jdu1HDtSqkufQB/v0LHZShavWJSH1s1JO4utgAPVpi","_id":"GOUbSr4xQkupaZQk"}
+{"_id":"OGzaSb4YDQTzkhDn"}
 {"email":"hello@feathersjs.com","password":"$2a$10$MY.kBqionUoo004N3HZE3.j2y6RFv20CIbxMdXeXU6qu7Vans8f9S","_id":"u4iUfyAY20EISecG"}
+{"email":"test","password":"$2a$10$Feb4AcDPPikq48FWemZ6M.wHdAXZASJI8KpdSbSeytuOOmm5Twd0y","_id":"vnvMxDB6PXg78ru9"}
+{"$$indexCreated":{"fieldName":"email","unique":true,"sparse":false}}
