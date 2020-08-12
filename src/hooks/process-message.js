@@ -14,11 +14,13 @@ module.exports = function (options = {}) { // eslint-disable-line no-unused-vars
     // Make sure that messages are no longer than 400 characters
     const { text } = data;
     const messageId = data.id;
+    const name = data.name;
 
     // Update the original data (so that people can't submit additional stuff)
     context.data = {
       text,
       messageId,
+      name,
       // Set the user id
       userId: user._id,
       // Add the current date
